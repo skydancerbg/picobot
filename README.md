@@ -1,2 +1,2 @@
 # picobot
-Raspberry PI Pico mecnum platform with arm. 
+Raspberry PI Pico mecanum mobile platform with arm. 
