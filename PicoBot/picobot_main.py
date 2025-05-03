@@ -9,7 +9,7 @@ import network
 import socket
 from time import sleep
 import machine
-import secrets.py
+#from secrets import secrets
 import ubinascii
 from picobot import PicoBot
 import rp2
@@ -25,24 +25,16 @@ robot = PicoBot()
 # Set country to avoid possible errors
 rp2.country('BG')
 
-## !!!
-## Important: Change the robot's WiFi AP name and password
-## to the desired ones in the secrets.py file
-## NOTE your WiFi AP name should be unique in order to avoid WiFi AP name collisions
-## in robotics competition environment!
-## !!!
+
+##ssid = 'smart_home'
+##password = 'Stem123*'
 # Load login data from different file for safety reasons
-ssid = secrets.SSID
-password = secrets.PASSWORD
+#ssid = secrets['ssid']
+#password = secrets['pw']
+ssid = 'picobottest'
+password = '12345678'
 
-### If in some reason you want to set the WiFi AP name and password in this file,
-### comment the lines above, uncomments the two lines below and change
-## the name and password inside the quotes
-## NOTE your WiFi AP name should be unique in order to avoid WiFi AP name collisions
-## in robotics competition environment.
-#ssid = 'picobottest'
-#password = '12345678'
-
+# Got IP 10.11.12.242
 
 def move_left_forward():
     print ("Left Forward")
